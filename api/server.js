@@ -8,6 +8,9 @@ const app = express();
 app.get("/", (req, res) => {
   res.send("Express on Vercel");
 });
+app.get("/api", (req, res) => {
+  res.send("Bonjour tout le monde!");
+});
 
 // Initialize server
 app.listen(5000, () => {
